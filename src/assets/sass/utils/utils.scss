@@ -1,0 +1,26 @@
+// VARIABLES
+// .........
+
+// Page home
+$home-page-title: #FFFFFF;
+$home-page-background: #000000;
+$home-page-container: #F6F6F6;
+
+// Navigation componant
+$navigation-primary: #FF6060;
+$navigation-svg-primary: invert(60%) sepia(71%) saturate(3932%) hue-rotate(327deg) brightness(115%) contrast(103%);
+
+// Footer component
+$footer-primary: #000000;
+$footer-secondary: #FFFFFF;
+
+// Thumbnail component
+$thumbnail-title: #FFFFFF;
+
+// FACTORED
+// ........
+
+// Navigation component
+.color-primary {
+    color: $navigation-primary;
+}

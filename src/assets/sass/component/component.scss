@@ -1,0 +1,148 @@
+// Component Header
+.navigation {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $navigation-primary;
+    margin: 25px 50px 25px 50px;
+
+    &__logo {
+        border: 2px solid blue;
+        font-size: 50px;
+
+        &__house {
+            width: 30px;
+            height: 30px;
+            filter: $navigation-svg-primary;
+        }
+    }
+
+    &__link {
+        border: 2px solid blue;
+        display: flex;
+        color: $navigation-primary;
+
+        &__first {
+            margin-right: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__second {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Component Footer
+.footer {
+    border: 2px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    height: 100px;
+    background-color: $footer-primary;
+    color: $footer-secondary;
+
+    &__logo {
+        border: 2px solid blue;
+        font-size: 30px;
+
+        &__house {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__copyright {
+        border: 2px solid blue;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+// Component Background
+.image-container {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    height: 223px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    &__title {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $home-page-title;
+    }
+
+    &__background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $home-page-background;
+        opacity: 0.3;
+    }
+}
+
+// Composant Thumbnail
+.thumbnail {
+    position: relative;
+    margin-top: 15px;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &__image {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        color: $thumbnail-title;
+    }
+}
+
+// Gallery
+.gallery {
+    display: flex;
+    position: relative;
+    border: 2Px solid purple;
+    height: 415px;
+
+    &__arrow-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+    }
+
+    &__image {
+        object-fit: cover;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+    }
+}

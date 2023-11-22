@@ -1,0 +1,28 @@
+// Home page
+.home {
+    margin: 0 50px 0 50px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0 50px 0;
+        padding: 35px 50px 50px 50px;
+        border-radius: 25px;
+        background-color: $home-page-container;
+    }
+}
+
+// Accomodation page
+.accomodation {
+    margin: 0 50px 0 50px;
+
+    &__informations {
+        border: 2px solid purple;
+    }
+}
+
+// About page
+.about {
+    margin: 0 50px 0 50px;
+}
