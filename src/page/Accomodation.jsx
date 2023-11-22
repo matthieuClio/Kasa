@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom"
 
 // Component
 import Gallery from '../component/Gallery'
+import Tags from "../component/Tag"
 
 // Script
 import getAccomodation from '../script/getAccomodation'
@@ -20,11 +21,23 @@ export default function Accomodation () {
         <main className="accomodation">
             <Gallery picturesSrc={specificData.pictures} />
 
-            <section className="accomodation__informations">
-                <div>
+            <div className="accomodation__informations">
+                <section style={{border:'2px solid blue'}}>
                     <h1>{specificData.title}</h1>
+
+                    <div className="accomodation__informations__location">
+                        {specificData.location}
+                    </div>
+
+                    {specificData.tags.map((element) => (
+                        <Tags key={`${specificData.id}-${element}`} tagsList={element} />
+                    ))}
+                </section>
+
+                <div>
+                    Test
                 </div>
-            </section>
+            </div>
         </main>
     )
 }

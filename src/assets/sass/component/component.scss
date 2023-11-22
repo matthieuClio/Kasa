@@ -1,4 +1,4 @@
-// Component Header
+// Header component 
 .navigation {
     border: 2px solid purple;
     display: flex;
@@ -39,7 +39,7 @@
     }
 }
 
-// Component Footer
+// Footer component 
 .footer {
     border: 2px solid purple;
     display: flex;
@@ -69,7 +69,7 @@
     }
 }
 
-// Component Background
+// Background component
 .image-container {
     margin-top: 50px;
     display: flex;
@@ -98,7 +98,7 @@
     }
 }
 
-// Composant Thumbnail
+// Thumbnail component
 .thumbnail {
     position: relative;
     margin-top: 15px;
@@ -121,11 +121,11 @@
     }
 }
 
-// Gallery
+// Gallery componant
 .gallery {
     display: flex;
     position: relative;
-    border: 2Px solid purple;
+    border: 2px solid purple;
     height: 415px;
 
     &__arrow-left {
@@ -145,4 +145,17 @@
         right: 0;
         width: 50px;
     }
+}
+
+// Tags component
+.tags {
+    display: inline-block;    
+    line-height: 25px;
+    margin-right: 15px;
+    min-width: 115px;
+    height: 25px;
+    background-color: $accomodation-page-tags;
+    color: $accomodation-page-tags-text;
+    border-radius: 10px;
+    text-align: center;
 }
