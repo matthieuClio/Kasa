@@ -127,12 +127,17 @@
     position: relative;
     border: 2px solid purple;
     height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
 
     &__arrow-left {
         position: absolute;
         top: 0;
-        left: 0;
+        bottom: 0;
+        left: 30px;
+        margin: auto;
         width: 50px;
+        cursor: pointer;
     }
 
     &__image {
@@ -142,8 +147,20 @@
     &__arrow-right {
         position: absolute;
         top: 0;
-        right: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto;
         width: 50px;
+        cursor: pointer;
+    }
+
+    &__image-number {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        color: $gallery-image-number-color;
     }
 }
 
@@ -186,6 +203,7 @@
         &__icon {
             width: 24px;
             height: 13px;
+            cursor: pointer;
         }
     }
 

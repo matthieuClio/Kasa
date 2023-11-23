@@ -54,6 +54,7 @@ export default function Accomodation () {
                 </div>
             </div>
 
+            {/* Acoomodation details */}
             <div className="accomodation__details-container">
                 <Details detailsTitle={'Description'} textDescription={specificData.description} />
                 <Details detailsTitle={'Équipement'} equipments={specificData.equipments} />
