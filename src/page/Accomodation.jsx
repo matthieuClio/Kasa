@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom'
 // Component
 import Gallery from '../component/Gallery'
 import Tags from '../component/Tag'
-// import Rating from "../component/Rating"
+import Details from '../component/Details'
 
 // Script
 import getAccomodation from '../script/getAccomodation'
@@ -52,6 +52,11 @@ export default function Accomodation () {
                     {/* Rating */}
                     {renderRating(ratingNumber)}
                 </div>
+            </div>
+
+            <div className="accomodation__details-container">
+                <Details detailsTitle={'Description'} textDescription={specificData.description} />
+                <Details detailsTitle={'Équipement'} equipments={specificData.equipments} />
             </div>
         </main>
     )

@@ -149,10 +149,11 @@
 
 // Tags component
 .tags {
-    display: inline-block;    
+    display: inline-block;   
+    padding: 0 10px 0 10px; 
     line-height: 25px;
     margin-right: 15px;
-    min-width: 115px;
+    min-width: 105px;
     height: 25px;
     background-color: $accomodation-page-tags;
     color: $accomodation-page-tags-text;
@@ -164,4 +165,38 @@
 .rating-icon {
     width: 24px;
     height: 24px;
+}
+
+// Details component
+.details-container  {
+    border: 2px solid purple;
+    width: 45%;
+
+    &__contain {
+        z-index: 3;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+        background-color: $details-background;
+        border-radius: 10px;
+        color: $details-color;
+        
+        &__icon {
+            width: 24px;
+            height: 13px;
+        }
+    }
+
+    &__informations {
+        padding: 20px 10px 20px 10px;
+        min-height: 150px;
+        background-color: #F6F6F6;
+        color: $details-informations-color;
+
+        &__equipements {
+            padding-bottom: 2px;
+        }
+    }
 }
