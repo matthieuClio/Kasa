@@ -199,22 +199,46 @@
         background-color: $details-background;
         border-radius: 10px;
         color: $details-color;
+        transition: all 0.5s;
         
         &__icon {
             width: 24px;
             height: 13px;
             cursor: pointer;
+            transition: all 0.5s;
         }
     }
 
     &__informations {
-        padding: 20px 10px 20px 10px;
-        min-height: 150px;
-        background-color: #F6F6F6;
+        padding: 0 10px 0 10px;
+        transition: all 0.5s;
+        transform: translateY(0%);
+        height: 0;
+        transform-origin: top;
+        background-color: $details-informations-background;
         color: $details-informations-color;
+        overflow: hidden;
+
+        &__description {
+            line-height: 23px;
+        }
 
         &__equipements {
-            padding-bottom: 2px;
+            line-height: 23px;
         }
     }
+}
+
+// Details : animation
+.details-container-information-animation {
+    height: 150px;
+    padding: 20px 10px 20px 10px;
+}
+
+.details-container-icon-animation {
+    transform: rotate(180deg);
+}
+
+.detail-container-contain-animation {
+    border-radius: 3px;
 }

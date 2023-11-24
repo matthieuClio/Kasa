@@ -8,6 +8,7 @@ export default function Gallery ({ picturesSrc }) {
     // Change picture
     // (not in a script file cause of State modification)
     function changePicture (pictureToDisplay) {
+
         // We are to the first and want go to the last picture
         if (pictureToDisplay < 0) {
             setCurrentPicture(nbPictures -1)
