@@ -87,6 +87,10 @@
         color: $home-page-title;
     }
 
+    &__image {
+        object-fit: cover;
+    }
+
     &__background {
         z-index: 1;
         position: absolute;
