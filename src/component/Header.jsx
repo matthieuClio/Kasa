@@ -26,7 +26,7 @@ export default function Navigation () {
                 </nav>
             </header>
 
-            {/* Outlet will be the page contain location */}
+            {/* Outlet will be the page contain */}
             <Outlet />
         </>
     )

@@ -15,13 +15,14 @@ import Footer from './component/Footer.jsx'
 import Home from './page/Home.jsx'
 import About from './page/About.jsx'
 import Accomodation from './page/Accomodation.jsx'
-
+import ErrorPage from './page/ErrorPage.jsx'
 // Data
 import data from './data/logements.json'
 
 const router = createBrowserRouter([
   {
     path: '/',
+    // Outlet is at end of Header component
     element: <>
       <Header />
       <Footer />
@@ -40,8 +41,13 @@ const router = createBrowserRouter([
       {
         path: 'a-propos',
         element: <About />
-      }
+      },
     ],
+    errorElement:<>
+      <Header />
+        <ErrorPage />
+      <Footer />
+    </>
   },
 ]);
 
