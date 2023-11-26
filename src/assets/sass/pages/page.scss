@@ -44,16 +44,30 @@
         }
     }
 
-    &__details-container {
+    &__main-details-container {
         border: 2px solid purple;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 40px;
+
+        &__details-container {
+            border: 2px solid blue;
+            width: 45%;
+        }
     }
 }
 
 // About page
 .about {
     margin: 0 50px 0 50px;
+
+    &__main-details-container {
+        margin: auto;
+        margin: 30px 100px 0 100px;
+
+        &__details-container {
+            margin-bottom: 30px;
+        }
+    }
 }

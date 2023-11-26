@@ -189,60 +189,59 @@
 }
 
 // Details component
-.details-container  {
-    border: 2px solid purple;
-    width: 45%;
-
-    &__contain {
-        z-index: 3;
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 10px 10px 10px;
-        background-color: $details-background;
-        border-radius: 10px;
-        color: $details-color;
+.contain {
+    z-index: 3;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: $details-background;
+    border-radius: 10px;
+    color: $details-color;
+    transition: all 0.5s;
+    
+    &__icon {
+        width: 24px;
+        height: 13px;
+        cursor: pointer;
         transition: all 0.5s;
-        
-        &__icon {
-            width: 24px;
-            height: 13px;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
+    }
+}
+
+.informations {
+    padding: 0 10px 0 10px;
+    transition: all 0.5s;
+    transform: translateY(0%);
+    height: 0;
+    transform-origin: top;
+    background-color: $details-informations-background;
+    color: $details-informations-color;
+    overflow: hidden;
+
+    &__description {
+        line-height: 23px;
     }
 
-    &__informations {
-        padding: 0 10px 0 10px;
-        transition: all 0.5s;
-        transform: translateY(0%);
-        height: 0;
-        transform-origin: top;
-        background-color: $details-informations-background;
-        color: $details-informations-color;
-        overflow: hidden;
-
-        &__description {
-            line-height: 23px;
-        }
-
-        &__equipements {
-            line-height: 23px;
-        }
+    &__equipements {
+        line-height: 23px;
     }
+}
+
+.border-radius-max {
+    border-radius: 3px;
 }
 
 // Details : animation
-.details-container-information-animation {
-    height: 150px;
+.details-information-animation {
+    height: auto;
     padding: 20px 10px 20px 10px;
 }
 
-.details-container-icon-animation {
+.details-icon-animation {
     transform: rotate(180deg);
 }
 
-.detail-container-contain-animation {
+.detail-contain-animation {
     border-radius: 3px;
 }
