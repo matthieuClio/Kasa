@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: 'accomodation/:accomodationId',
         element: <Accomodation />,
-        loader: () => data
+        loader: () => data,
       },
       {
         path: 'a-propos',

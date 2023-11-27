@@ -9,6 +9,11 @@ export default function getAccomodation (data, accomodationId) {
         }
     })
 
+    // Case no specific data
+    if (specificData === undefined) {
+        specificData = false
+    }
+
     // return the match data
     return specificData
 }
