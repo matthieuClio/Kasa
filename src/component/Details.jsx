@@ -1,7 +1,14 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-export default function Details ({ borderRadiusMax, detailsTitle, children }) {
+export default function Details 
+({ 
+        borderRadiusMax, 
+        heightAnimation = 'details-information-animation-height-auto', 
+        detailsTitle, 
+        children 
+}){
+
     const [isActive, setIsActive] = useState(false)
 
     function animation () {
@@ -21,7 +28,7 @@ export default function Details ({ borderRadiusMax, detailsTitle, children }) {
             </div>
 
             {/* Container */}
-            <div className={isActive?'informations details-information-animation': 'informations'}>
+            <div className={isActive?'informations ' + heightAnimation: 'informations'}>
                 {children}
             </div>
         </>
@@ -30,6 +37,7 @@ export default function Details ({ borderRadiusMax, detailsTitle, children }) {
 
 Details.propTypes = {
     borderRadiusMax: PropTypes.string,
+    heightAnimation: PropTypes.string,
     detailsTitle: PropTypes.string,
     children: PropTypes.node
 }

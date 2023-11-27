@@ -20,6 +20,9 @@ export default function Accomodation () {
     const specificData = getAccomodation(data, accomodationId)
     const ratingNumber = parseInt(specificData.rating)
 
+    // For Details component
+    const classMinHeight = 'details-information-animation-height-min'
+
     return (
         <main className="accomodation">
             <Gallery picturesSrc={specificData.pictures} />
@@ -57,7 +60,7 @@ export default function Accomodation () {
             {/* Acoomodation details */}
             <div className="accomodation__main-details-container">
                 <div className="accomodation__main-details-container__details-container">
-                    <Details detailsTitle={'Description'}>
+                    <Details heightAnimation={classMinHeight} detailsTitle={'Description'}>
                         <div className="informations__description">
                             {specificData.description}
                         </div>
@@ -65,7 +68,7 @@ export default function Accomodation () {
                 </div>
                 
                 <div className="accomodation__main-details-container__details-container">
-                    <Details detailsTitle={'Équipement'}>
+                    <Details heightAnimation={classMinHeight} detailsTitle={'Équipement'}>
                         {(specificData.equipments.map((element, index) => (
                             <div key={`${element}-${index}`} className="informations__equipements">
                                 {element}

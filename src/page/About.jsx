@@ -4,7 +4,7 @@ import Details from '../component/Details'
 
 export default function About () {
     // For Details component
-    const classBorderRadius = 'border-radius-max'
+    const classBorderRadius = 'details-border-radius-max'
     const urlPicture = '/image/about_background.jpg'
     const relableTitle = 'Fiable'
     const respectTitle = 'Respect'
