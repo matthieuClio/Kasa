@@ -14,6 +14,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: $home-page-title;
+        font-weight: normal;
     }
 
     &__image {
@@ -196,7 +197,6 @@
         &__title {
             width: 100%;
             font-size: 27px;
-            font-weight: normal;
             margin: 0 20px 0 20px;
         }
     }

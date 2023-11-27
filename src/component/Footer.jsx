@@ -4,7 +4,9 @@ export default function Footer () {
             <h2 className="footer__logo">
                 K<img src="/image/house.svg" className="footer__logo__house" alt="maison"/>sa
             </h2>
-            <span className="footer__copyright">© 2020 Kasa. All rights reserved</span>
+            <span className="footer__copyright">
+                © 2020 Kasa. All rights reserved
+            </span>
         </footer>
     )
 }
