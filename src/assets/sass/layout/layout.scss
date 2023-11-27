@@ -1,0 +1,86 @@
+// Header component 
+.navigation {
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $navigation-primary;
+    margin: 25px 50px 25px 50px;
+
+    &__logo {
+        border: 2px solid blue;
+        font-size: 50px;
+
+        &__house {
+            width: 30px;
+            height: 30px;
+            filter: $navigation-svg-primary;
+        }
+    }
+
+    &__link {
+        border: 2px solid blue;
+        display: flex;
+        color: $navigation-primary;
+
+        &__first {
+            margin-right: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__second {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Footer component 
+.footer {
+    border: 2px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    height: 100px;
+    background-color: $footer-primary;
+    color: $footer-secondary;
+
+    &__logo {
+        border: 2px solid blue;
+        font-size: 30px;
+
+        &__house {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__copyright {
+        border: 2px solid blue;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+// Mobile version
+@media screen and (max-width: 767px) {
+
+    // Header component 
+    .navigation {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+
+        &__logo {
+            font-size: 70px;
+        }
+    }
+}
