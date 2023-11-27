@@ -134,4 +134,20 @@
             }
         }
     }
+
+    // Error page
+    .error-page {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        &__title {
+            font-size: 120px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
 }
