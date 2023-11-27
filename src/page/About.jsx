@@ -40,19 +40,35 @@ export default function About () {
                 <Background imagePath={urlPicture}/>
                 <div className="about__main-details-container">
                     <div className="about__main-details-container__details-container">
-                        <Details borderRadiusMax={classBorderRadius} detailsTitle={relableTitle} textDescription={relableText} />
+                        <Details borderRadiusMax={classBorderRadius} detailsTitle={relableTitle} textDescription={relableText}>
+                            <div className="informations__description">
+                                {relableText}
+                            </div>
+                        </Details>
                     </div>
 
                     <div className="about__main-details-container__details-container">
-                        <Details borderRadiusMax={classBorderRadius} detailsTitle={respectTitle} textDescription={respectText} />
+                        <Details borderRadiusMax={classBorderRadius} detailsTitle={respectTitle} textDescription={respectText}>
+                            <div className="informations__description">
+                                {respectText}
+                            </div>
+                        </Details>
                     </div>
 
                     <div className="about__main-details-container__details-container">
-                        <Details borderRadiusMax={classBorderRadius} detailsTitle={serviceTitle} textDescription={serviceText} />
+                        <Details borderRadiusMax={classBorderRadius} detailsTitle={serviceTitle} textDescription={serviceText}>
+                            <div className="informations__description">
+                                {serviceText}
+                            </div>
+                        </Details>
                     </div>
 
                     <div className="about__main-details-container__details-container">
-                        <Details borderRadiusMax={classBorderRadius} detailsTitle={securityTitle} textDescription={securityText} />
+                        <Details borderRadiusMax={classBorderRadius} detailsTitle={securityTitle} textDescription={securityText}>
+                            <div className="informations__description">
+                                {securityText}
+                            </div>
+                        </Details>
                     </div>
                 </div>
             </main>

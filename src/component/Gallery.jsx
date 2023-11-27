@@ -26,16 +26,16 @@ export default function Gallery ({ picturesSrc }) {
     return (
         <figure className="gallery">
             {/* Arrow left icon */}
-            <img src="/image/leftArrow.svg" onClick={() => changePicture(currentPicture -1)} className="gallery__arrow-left" alt={'flèche de gauche'} />
+            <img src="/image/leftArrow.svg" onClick={() => changePicture(currentPicture -1)} className={nbPictures === 1?'display-none':'gallery__arrow-left'} alt={'flèche de gauche'} />
             
             {/* Picture */}
             <img src={picturesSrc[currentPicture]} className="gallery__image" alt="location" />
             
             {/* Arrow right icon */}
-            <img src="/image/rightArrow.svg" onClick={() => changePicture(currentPicture +1)} className="gallery__arrow-right" alt={'flèche de droite'} />
+            <img src="/image/rightArrow.svg" onClick={() => changePicture(currentPicture +1)} className={nbPictures === 1?'display-none':'gallery__arrow-right'} alt={'flèche de droite'} />
             
             {/* Image number */}
-            <div className="gallery__image-number">
+            <div className={nbPictures === 1?'display-none':'gallery__image-number'}>
                 {`${currentPicture +1}/${nbPictures}`}
             </div>
         </figure>

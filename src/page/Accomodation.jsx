@@ -57,11 +57,21 @@ export default function Accomodation () {
             {/* Acoomodation details */}
             <div className="accomodation__main-details-container">
                 <div className="accomodation__main-details-container__details-container">
-                    <Details detailsTitle={'Description'} textDescription={specificData.description} />
+                    <Details detailsTitle={'Description'}>
+                        <div className="informations__description">
+                            {specificData.description}
+                        </div>
+                    </Details>
                 </div>
                 
                 <div className="accomodation__main-details-container__details-container">
-                    <Details detailsTitle={'Équipement'} equipments={specificData.equipments} />
+                    <Details detailsTitle={'Équipement'}>
+                        {(specificData.equipments.map((element, index) => (
+                            <div key={`${element}-${index}`} className="informations__equipements">
+                                {element}
+                            </div>
+                        )))}
+                    </Details>
                 </div>
             </div>
         </main>
