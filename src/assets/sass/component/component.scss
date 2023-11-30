@@ -166,6 +166,7 @@
 
 // Details : animation
 .details-information-animation-height-min {
+    height: auto;
     min-height: 150px;
     padding: 20px 10px 20px 10px;
 }
@@ -211,6 +212,23 @@
 
         &__image {
             width: 100%;
+        }
+    }
+
+    // Gallery componant
+    .gallery {
+        margin-top: 25px;
+
+        &__arrow-left {
+            font-size: 10px;
+            width: 20px;
+            left: 20px;
+        }
+
+        &__arrow-right {
+            font-size: 10px;
+            width: 20px;
+            right: 20px;
         }
     }
 }

@@ -25,21 +25,28 @@
         margin: 25px 0 25px 0;
         color: $accomodation-page-information;
 
+        h1 {
+            font-weight: normal;
+        }
+        
         &__location {
             margin-top: 5px;
             margin-bottom: 15px;
         }
 
-        &__user {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            border: 2px solid green;
+        &__container {
 
-            &__image {
-                width: 64px;
-                height: 64px;
-                border-radius: 50px;
+            &__user {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                border: 2px solid green;
+    
+                &__image {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50px;
+                }
             }
         }
     }
@@ -115,6 +122,66 @@
             width: 90%;
             background-color: transparent;
             border: 2px solid green;
+        }
+    }
+
+    // Accomodation page
+    .accomodation {
+        // margin: 0 50px 0 50px;
+        margin: 0;
+        border: 2px solid red;
+        width: 90%;
+        margin: auto;
+
+        &__informations {
+            // border: 2px solid purple;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            // margin: 25px 0 25px 0;
+            // color: $accomodation-page-information;
+            flex-direction: column;
+
+            h1 {
+                width: 100%;
+            }
+
+            // &__location {
+            //     margin-top: 5px;
+            //     margin-bottom: 15px;
+            // }
+
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                border: 2px solid orange;
+                align-items: center;
+                margin-top: 25px;
+
+                &__user {
+                    order: 2;
+                }
+                
+                &__rating {
+                    order: 1;
+                }
+            }
+        }
+
+        &__main-details-container {
+            // border: 2px solid purple;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            margin-bottom: 0;
+            flex-direction: column;
+
+            &__details-container {
+                // border: 2px solid blue;
+                // width: 45%;
+                width: 100%;
+                margin-bottom: 25px;
+            }
         }
     }
 

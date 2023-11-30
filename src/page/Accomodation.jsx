@@ -48,9 +48,9 @@ export default function Accomodation () {
 
             {/* Accomodation */}
             <div className="accomodation__informations">
-                <section style={{border:'2px solid blue'}}>
+                <section>
                     {/* Main title */}
-                    <h1>{specificData.title}</h1>
+                    <h1 className="accomodation__informations__title">{specificData.title}</h1>
 
                     {/* Location */}
                     <div className="accomodation__informations__location">
@@ -64,15 +64,17 @@ export default function Accomodation () {
                 </section>
 
                 {/* User */}
-                <div style={{border: '2px solid blue'}}>
+                <div className="accomodation__informations__container">
                     {/* User profile */}
-                    <div className="accomodation__informations__user">
+                    <div className="accomodation__informations__container__user">
                         {specificData.host.name}
-                        <img src={specificData.host.picture} className="accomodation__informations__user__image" alt="profil utilisateur" />
+                        <img src={specificData.host.picture} className="accomodation__informations__container__user__image" alt="profil utilisateur" />
                     </div>
                     
                     {/* Rating */}
-                    {renderRating(ratingNumber)}
+                    <div className="accomodation__informations__container__rating">
+                        {renderRating(ratingNumber)}
+                    </div>
                 </div>
             </div>
 
