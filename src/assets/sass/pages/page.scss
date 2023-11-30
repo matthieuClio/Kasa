@@ -5,7 +5,6 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin: 50px 0 50px 0;
         padding: 35px 50px 50px 50px;
         border-radius: 25px;
@@ -111,6 +110,7 @@
     .home {
         margin: 0;
         width: 100%;
+        justify-content: center;
 
         &__container {
             flex-direction: column;
