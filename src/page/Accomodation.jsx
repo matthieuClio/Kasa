@@ -1,10 +1,9 @@
 // React
-// import { useEffect } from 'react'
+import { useEffect } from 'react'
 
 // Navigation
 import { useLoaderData, useParams } from 'react-router-dom'
-// import { useNavigate } from 'react-router-dom'
-import ErrorPage from './ErrorPage'
+import { useNavigate } from 'react-router-dom'
 
 // Component
 import Gallery from '../component/Gallery'
@@ -23,17 +22,17 @@ export default function Accomodation () {
     const { accomodationId } = useParams()
 
     // Navigation
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     // Defined specific data
     const specificData = getAccomodation(data, accomodationId)
 
-    // useEffect(() => {
-    //     // Redirect user in the case where there is no specific data
-    //     if (!specificData) {
-    //         navigate('error-page')
-    //     }
-    // })
+    useEffect(() => {
+        // Redirect user in the case where there is no specific data
+        if (!specificData) {
+            navigate('error-page')
+        }
+    })
 
     // Convert rating in int type
     const ratingNumber = parseInt(specificData.rating)
@@ -42,7 +41,7 @@ export default function Accomodation () {
     const classMinHeight = 'details-information-animation-height-min'
 
     // In the case there is specific data
-    return specificData ? (
+    return specificData && (
         <main className="accomodation">
             <Gallery picturesSrc={specificData.pictures} />
 
@@ -99,5 +98,5 @@ export default function Accomodation () {
                 </div>
             </div>
         </main>
-    ) : <ErrorPage />
+    )
 }

@@ -42,7 +42,12 @@ const router = createBrowserRouter([
         path: 'a-propos',
         element: <About />
       },
+      { // Error page for manual redirection 
+        path: 'error-page',
+        element: <ErrorPage />
+      }
     ],
+    // Error page for auto redirection
     errorElement:<>
       <Header />
         <ErrorPage />
