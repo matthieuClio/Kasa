@@ -1,6 +1,5 @@
 // Header component 
 .navigation {
-    border: 2px solid purple;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,7 +7,6 @@
     margin: 25px 50px 25px 50px;
 
     &__logo {
-        border: 2px solid blue;
         font-size: 50px;
 
         &__house {
@@ -19,7 +17,6 @@
     }
 
     &__link {
-        border: 2px solid blue;
         display: flex;
         color: $navigation-primary;
 
@@ -41,7 +38,6 @@
 
 // Footer component 
 .footer {
-    border: 2px solid purple;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,7 +48,6 @@
     color: $footer-secondary;
 
     &__logo {
-        border: 2px solid blue;
         font-size: 30px;
         font-weight: normal;
 
@@ -63,7 +58,6 @@
     }
 
     &__copyright {
-        border: 2px solid blue;
         width: 100%;
         font-size: 15px;
         text-align: center;

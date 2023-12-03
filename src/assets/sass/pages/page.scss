@@ -5,10 +5,19 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 50px 0 50px 0;
-        padding: 35px 50px 50px 50px;
+        padding: 35px 25px 50px 25px;
         border-radius: 25px;
         background-color: $home-page-container;
+        border: 2px solid green;
+
+        &__accomodations {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid purple;
+            width: 1062px;
+        }
     }
 }
 
@@ -17,7 +26,6 @@
     margin: 0 50px 0 50px;
 
     &__informations {
-        border: 2px solid purple;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -39,7 +47,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                border: 2px solid green;
     
                 &__image {
                     width: 64px;
@@ -51,14 +58,12 @@
     }
 
     &__main-details-container {
-        border: 2px solid purple;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 40px;
 
         &__details-container {
-            border: 2px solid blue;
             width: 45%;
         }
     }
@@ -110,16 +115,20 @@
             margin: 0;
             width: 100%;
             justify-content: center;
+            padding: 35px 25px 50px 25px;
 
             &__container {
-                flex-direction: column;
-                align-items: center;
                 padding: 0;
                 margin: 0;
                 margin: auto;
                 margin-top: 25px;
                 width: 90%;
-                background-color: transparent;
+                // background-color: transparent;
+
+                &__accomodations {
+                    justify-content: center;
+                    width: 90%;
+                }
             }
         }
 
@@ -170,26 +179,26 @@
     // Home page
     .home {
         margin: 0;
-        width: 100%;
-        justify-content: center;
 
         &__container {
-            flex-direction: column;
-            align-items: center;
             padding: 0;
             margin: 0;
             margin: auto;
             margin-top: 25px;
             width: 90%;
             background-color: transparent;
-            border: 2px solid green;
+
+            &__accomodations {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
         }
     }
 
     // Accomodation page
     .accomodation {
         margin: 0;
-        border: 2px solid red;
         width: 90%;
         margin: auto;
 
@@ -203,7 +212,6 @@
             &__container {
                 display: flex;
                 justify-content: space-between;
-                border: 2px solid orange;
                 align-items: center;
                 margin-top: 25px;
 

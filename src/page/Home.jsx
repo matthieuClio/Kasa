@@ -19,16 +19,18 @@ export default function Home () {
         
         {/* Picture cover */}
         <div className="home__container">
-          {
-            data.map((element) => (
-              <Link to={`accomodation/${element.id}`} key={element.id}>
-                <Thumbnail
-                coverImage={element.cover}
-                title={element.title}
-              />
-              </Link>
-            ))
-          }
+          <div className="home__container__accomodations">
+            {
+              data.map((element) => (
+                <Link to={`accomodation/${element.id}`} key={element.id}>
+                  <Thumbnail
+                  coverImage={element.cover}
+                  title={element.title}
+                />
+                </Link>
+              ))
+            }
+          </div>
         </div>
       </main>
     </>

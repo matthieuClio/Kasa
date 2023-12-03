@@ -61,7 +61,6 @@
 .gallery {
     display: flex;
     position: relative;
-    border: 2px solid purple;
     height: 415px;
     overflow: hidden;
     border-radius: 25px;
@@ -168,7 +167,6 @@
 
 // Details : animation
 .details-information-animation-height-min {
-    height: auto;
     min-height: 150px;
     padding: 20px 10px 20px 10px;
 }
@@ -188,11 +186,16 @@
 
 // Tablet version
 @media screen and (min-width: 768px) and (max-width: 901px) {
+
+    // Background component
+    .image-container {
+        width: 90%;
+        margin: auto;
+    }
     
     // Thumbnail component
     .thumbnail {
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 0 5px 25px 5px;
         width: 300px;
         height: 250px;
 
@@ -208,7 +211,6 @@
     // Background component
     .image-container {
         height: 150px;
-        border: 2px solid purple;
         width: 90%;
         margin: auto;
         margin-top: 25px;
@@ -222,7 +224,6 @@
 
     // Thumbnail component
     .thumbnail {
-        border: 2px solid red;
         margin-top: 0;
         margin-bottom: 25px;
         width: 300px;
