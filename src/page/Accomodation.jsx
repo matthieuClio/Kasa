@@ -34,9 +34,6 @@ export default function Accomodation () {
         }
     })
 
-    // Convert rating in int type
-    const ratingNumber = parseInt(specificData.rating)
-
     // For Details component
     const classMinHeight = 'details-information-animation-height-min'
 
@@ -72,7 +69,8 @@ export default function Accomodation () {
                     
                     {/* Rating */}
                     <div className="accomodation__informations__container__rating">
-                        {renderRating(ratingNumber)}
+                        {/* Convert rating in int type */}
+                        {renderRating(parseInt(specificData.rating))}
                     </div>
                 </div>
             </div>
