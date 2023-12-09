@@ -10,12 +10,10 @@
         padding: 35px 25px 50px 25px;
         border-radius: 25px;
         background-color: $home-page-container;
-        border: 2px solid green;
 
         &__accomodations {
             display: flex;
             flex-wrap: wrap;
-            border: 2px solid purple;
             width: 1062px;
         }
     }
@@ -124,7 +122,6 @@
                 margin: auto;
                 margin-top: 25px;
                 width: 90%;
-                // background-color: transparent;
 
                 &__accomodations {
                     justify-content: center;
