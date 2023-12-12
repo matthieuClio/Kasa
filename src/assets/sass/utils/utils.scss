@@ -46,6 +46,10 @@ $details-informations-background: #F6F6F6;
     color: $navigation-primary;
 }
 
+.navigation-text-decoration {
+    text-decoration: underline;
+}
+
 // Can be use by all
 .display-none {
     display: none;
