@@ -7,6 +7,9 @@ export default function Thumbnail ({ coverImage, title }) {
             <div className="thumbnail__title">
                 {title}
             </div>
+            
+            <div className="thumbnail__background">
+            </div>
         </figure>
     )
 }

@@ -50,10 +50,20 @@
     }
 
     &__title {
+        z-index: 2;
         position: absolute;
         bottom: 25px;
         left: 25px;
         color: $thumbnail-title;
+    }
+
+    &__background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+        width: 100%;
+        height: 100%;
     }
 }
 

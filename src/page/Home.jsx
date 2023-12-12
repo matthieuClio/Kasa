@@ -24,9 +24,9 @@ export default function Home () {
               data.map((element) => (
                 <Link to={`accomodation/${element.id}`} key={element.id}>
                   <Thumbnail
-                  coverImage={element.cover}
-                  title={element.title}
-                />
+                    coverImage={element.cover}
+                    title={element.title}
+                  />
                 </Link>
               ))
             }
